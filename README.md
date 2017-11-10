@@ -1,7 +1,8 @@
 ## Docker deployment in AWS EC2 instance 
 
-Give the security group as follows 
-
+Give the security group as follows:
+http 80 0.0.0.0
+SSH 22  0.0.0.0
 
 
 ### Inside AWS Ec2 terminal
@@ -23,3 +24,6 @@ Give the security group as follows
  [ec2-user]$ docker run  -p 80:8080 -t bobby994/dockerspring 
 
  [ec2-user]$ docker run -d -p 8080:8080 bobby994/dockerspring
+ 
+ 
+ 
